@@ -11,28 +11,20 @@ return [
     'page' => [
         'childService' => [
             'currency' => [
-                'baseCurrecy'     => 'USD',    // 基础货币，后台产品的价格都使用基础货币填写价格值。
-                'defaultCurrency' => 'USD', // 默认货币，如果store不设置货币，就使用这个store默认货币
+                'baseCurrecy'     => 'VND',    // 基础货币，后台产品的价格都使用基础货币填写价格值。
+                'defaultCurrency' => 'VND', // 默认货币，如果store不设置货币，就使用这个store默认货币
                 'currencys'       => [
                     
-                    'EUR' => [            // 欧元
-                        'rate'        => 0.93, // 汇率
-                        'symbol'      => '€',
-                    ],
                     'USD' => [            // 货币简码，USD代表美元，这个是国际标准
-                        'rate'        => 1,    // 汇率  当前货币/基础货币的比值，譬如，人民币/美元 = 7
+                        'rate'        => 0.00004311,    // 汇率  当前货币/基础货币的比值，譬如，人民币/美元 = 7
                         'symbol'      => '$', //货币符号
                     ],
-                    //'AUD' => [
-                    //	'rate' 		=> 1.33,
-                    //	'symbol' 	=> 'AU$',
-                    //],
-                    'GBP' => [            // 英镑
-                        'rate'        => 0.8,
-                        'symbol'      => '£',
+                    'VND' => [            // 英镑
+                        'rate'        => 1,
+                        'symbol'      => 'D.',
                     ],
                     'CNY' => [            // 人民币
-                        'rate'        =>  6.3, //6.87,
+                        'rate'        =>  0.0002893, //6.87,
                         'symbol'      => '￥',
                     ],
                 ],

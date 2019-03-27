@@ -13,9 +13,9 @@ return [
         //  mongoSearchLangName 在各个语言下字段参考资料如下：（不支持中文）
         //  https://docs.mongodb.com/manual/reference/text-search-languages/#text-search-languages
         'adminLangCode' => [
-            'en_US' => [
-                'code'                    => 'en',
-                'name'                   => 'English',
+            'vi-VN' => [
+                'code'                    => 'vi',
+                'name'                   => 'Tiếng Việt',
             ],
             'zh_CN' => [
                 'code'                    => 'zh',
@@ -31,20 +31,8 @@ return [
             'zh_CN' => [
                 'code'                    => 'zh',
             ],
-            'fr_FR' => [
-                'code' 					=> 'fr',
-            ],
-            'de_DE' => [
-                'code' 					=> 'de',
-            ],
-            'es_ES' => [
-                'code' 					=> 'es',
-            ],
-            'ru_RU' => [
-                'code' 					=> 'ru',
-            ],
-            'pt_PT' => [
-                'code' 					=> 'pt',
+            'vi-VN' => [
+                'code' 			  => 'vi',
             ],
         ],
         'defaultLangCode' => 'en',

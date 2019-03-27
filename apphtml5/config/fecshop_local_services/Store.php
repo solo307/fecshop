@@ -29,16 +29,16 @@
                 // sitemap的路径。
                 'sitemapDir' => '@apphtml5/web/sitemap.xml',
             ],
-            '18.224.15.243:8080/fr' => [
-                'language'         => 'fr_FR',
-                'languageName'     => 'Français',
+            '18.224.15.243:8080/vi' => [
+                'language'         => 'vi_VN',
+                'languageName'     => 'Tiếng Việt',
                 'localThemeDir'    => '@apphtml5/theme/terry/theme01',
                 'thirdThemeDir'    => [],
-                'currency'         => 'RMB',
+                'currency'         => 'VND',
                 'mobile'           => [
                     'enable'               => false,
                     'condition'            => ['phone'], // phone 代表手机，tablet代表平板。
-                    'redirectDomain'       => 'fecshop.apphtml5.fancyecommerce.com/fr', // 跳转后的url。
+                    'redirectDomain'       => '18.224.15.243:8080/vi', // 跳转后的url。
                 ],
                 // 第三方账号登录配置
                 'thirdLogin' => [
@@ -53,33 +53,7 @@
                         'CLIENT_SECRET'  => 'ei8RaoCDoAlIeh1nHYm0rrwO',
                     ],
                 ],
-                'sitemapDir' => '@apphtml5/web/fr/sitemap.xml',
-            ],
-            'fecshop.apphtml5.es.fancyecommerce.com' => [
-                'language'         => 'es_ES',
-                'languageName'     => 'Español',
-                'localThemeDir'    => '@apphtml5/theme/terry/theme01',
-                'thirdThemeDir'    => [],
-                'currency'         => 'USD',
-                'mobile'           => [
-                    'enable'            => false,
-                    'condition'         => ['tablet'],
-                    'redirectDomain'    => 'fecshop.apphtml5.es.fancyecommerce.com',
-                ],
-                // 第三方账号登录配置
-                'thirdLogin' => [
-                    // facebook账号登录
-                    'facebook' => [       //fb api配置 ，fb可以一个app设置pc和手机web两个域名
-                        'facebook_app_id'     => '108618299786621',
-                        'facebook_app_secret' => '420b56da4f4664a4d1065a1d31e5ec73',
-                    ],
-                    // google账号登录
-                    'google' => [       //谷歌api visit https://code.google.com/apis/console to generate your google api
-                        'CLIENT_ID'      => '380372364773-qdj1seag9bh2n0pgrhcv2r5uoc58ltp3.apps.googleusercontent.com',
-                        'CLIENT_SECRET'  => 'ei8RaoCDoAlIeh1nHYm0rrwO',
-                    ],
-                ],
-                'sitemapDir' => '@apphtml5/web/sitemap_es.xml',
+                'sitemapDir' => '@apphtml5/web/vi/sitemap.xml',
             ],
             '18.224.15.243:8080/cn' => [
                 'language'         => 'zh_CN',
@@ -90,7 +64,7 @@
                 'mobile'           => [
                     'enable'            => false,
                     'condition'         => ['phone', 'tablet'],
-                    'redirectDomain'    => 'fecshop.apphtml5.fancyecommerce.com/cn',
+                    'redirectDomain'    => '18.224.15.243:8080/cn',
                 ],
                 // 第三方账号登录配置
                 'thirdLogin' => [

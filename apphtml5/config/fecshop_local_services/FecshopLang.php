@@ -18,26 +18,11 @@ return [
             'en_US' => [
                 'code'                    => 'en',
             ],
-            'fr_FR' => [
-                'code'                    => 'fr',
-            ],
-            'de_DE' => [
-                'code'                    => 'de',
-            ],
-            'es_ES' => [
-                'code'                    => 'es',
-            ],
-            'ru_RU' => [
-                'code'                    => 'ru',
-            ],
-            'pt_PT' => [
-                'code'                    => 'pt',
+            'vi-VN' => [
+                'code'                    => 'vi',
             ],
             'zh_CN' => [
                 'code'                    => 'zh',
-            ],
-            'it_IT' => [
-                'code'                    => 'it',
             ],
         ],
         'defaultLangCode' => 'en',
