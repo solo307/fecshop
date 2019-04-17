@@ -10,13 +10,17 @@
 return [
     'image' => [
         'appbase'    => [
-            'appfront' => [
-                'basedir'    => '@appimage/appfront',
-                'basedomain' => '//img.appfront.fancyecommerce.com',
-            ],
+            //'appfront' => [
+            //    'basedir'    => '@appimage/appfront',
+            //    'basedomain' => '//img.appfront.fancyecommerce.com',
+            //],
             'apphtml5' => [
                 'basedir'    => '@appimage/apphtml5',
-                'basedomain' => '//img.apphtml5.fancyecommerce.com',
+                'basedomain' => '//im4.yensuciu.com',
+            ],
+            'appadmin' => [
+                'basedir'    => '@appimage/appadmin',
+                'basedomain' => '//im2.yensuciu.com',
             ],
             //'appadmin' => [
             //	'basedir' => '@appimage/appadmin',
@@ -24,7 +28,7 @@ return [
             //],
             'common' => [
                 'basedir'    => '@appimage/common',
-                'basedomain' => '//img.fancyecommerce.com',
+                'basedomain' => '//im.yensuciu.com',
             ],
         ],
     ],

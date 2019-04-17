@@ -35,6 +35,6 @@ return [
                 'code' 			  => 'vi',
             ],
         ],
-        'defaultLangCode' => 'en',
+        'defaultLangCode' => 'zh',
     ],
 ];

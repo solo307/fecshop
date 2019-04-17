@@ -4,12 +4,12 @@
         'class'  => 'fecshop\services\Store',
         'stores' => [
             // store key：域名去掉http部分，作为key，这个必须这样定义。
-            '18.224.15.243:8080' => [
+            'm.yensuciu.com' => [
                 'language'         => 'en_US',        // 语言简码需要在@common/config/fecshop_local_services/FecshopLang.php 中定义。
                 'languageName'     => 'English',    // 语言简码对应的文字名称，将会出现在语言切换列表中显示。
                 'localThemeDir'    => '@apphtml5/theme/terry/theme01', // 设置当前store对应的模板路径。关于多模板的方面的知识，您可以参看fecshop多模板的知识。
                 'thirdThemeDir'    => [],  // 第三方模板路径，数组，可以多个路径
-                'currency'         => 'USD', // 当前store的默认货币,这个货币简码，必须在货币配置中配置
+                'currency'         => 'VND', // 当前store的默认货币,这个货币简码，必须在货币配置中配置
 
                 // 第三方账号登录配置
                 'thirdLogin' => [
@@ -29,7 +29,7 @@
                 // sitemap的路径。
                 'sitemapDir' => '@apphtml5/web/sitemap.xml',
             ],
-            '18.224.15.243:8080/vi' => [
+            'm.yensuciu.com/vi' => [
                 'language'         => 'vi_VN',
                 'languageName'     => 'Tiếng Việt',
                 'localThemeDir'    => '@apphtml5/theme/terry/theme01',
@@ -38,7 +38,7 @@
                 'mobile'           => [
                     'enable'               => false,
                     'condition'            => ['phone'], // phone 代表手机，tablet代表平板。
-                    'redirectDomain'       => '18.224.15.243:8080/vi', // 跳转后的url。
+                    'redirectDomain'       => 'm.yensuciu.com/vi', // 跳转后的url。
                 ],
                 // 第三方账号登录配置
                 'thirdLogin' => [
@@ -55,7 +55,7 @@
                 ],
                 'sitemapDir' => '@apphtml5/web/vi/sitemap.xml',
             ],
-            '18.224.15.243:8080/cn' => [
+            'm.yensuciu.com/cn' => [
                 'language'         => 'zh_CN',
                 'languageName'     => '中文',
                 'localThemeDir'    => '@apphtml5/theme/terry/theme01',
@@ -64,7 +64,7 @@
                 'mobile'           => [
                     'enable'            => false,
                     'condition'         => ['phone', 'tablet'],
-                    'redirectDomain'    => '18.224.15.243:8080/cn',
+                    'redirectDomain'    => 'm.yensuciu.com/cn',
                 ],
                 // 第三方账号登录配置
                 'thirdLogin' => [
