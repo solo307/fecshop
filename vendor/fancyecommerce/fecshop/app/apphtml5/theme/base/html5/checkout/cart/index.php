@@ -28,7 +28,7 @@ use fec\helpers\CRequest;
                     <div class="cart_select_div">
                         <input id="cart_select_all" type="checkbox" name="cart_select_all" class="cart_select cart_select_all">
                         &nbsp;
-                        <label for="cart_select_all">Select All Product</label>
+                        <label for="cart_select_all"><?= Yii::$service->page->translate->__('Select All Product');?></label>
                     </div>
 					<?php if(is_array($cart_info['products']) && (!empty($cart_info['products']))): ?>
 						<?php foreach($cart_info['products'] as $product_one): ?>
@@ -120,11 +120,6 @@ use fec\helpers\CRequest;
 							<div class="col-33"><?=  $currency_info['symbol'];  ?><?= Format::price($cart_info['product_volume']); ?> c㎡</div>
 						</div>
                         
-						
-						<div class="row no-gutter">
-							<div class="col-66"><?= Yii::$service->page->translate->__('Shipping Cost');?>  : </div>
-							<div class="col-33"><?=  $currency_info['symbol'];  ?><?= Format::price($cart_info['shipping_cost']); ?></div>
-						</div>
 						
 						
 						<div class="row no-gutter">

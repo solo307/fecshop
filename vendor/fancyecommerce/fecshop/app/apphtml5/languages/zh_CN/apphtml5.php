@@ -218,6 +218,7 @@ return [
     'Price'                        => '价格',
     'Qty'                            => '个数',
     'Subtotal'                        => '小计',
+    'Sub Total'                        => '小计',
     'Shipping Cost'                => '运费',
     'Discount'                        => '折扣优惠',
     'Grand Total'                    => '总额',

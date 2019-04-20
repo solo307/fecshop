@@ -25,6 +25,7 @@ return [
                     'start_url'                => '@homeUrl/payment/checkmoney/start',    // 点击按钮后，跳转的url，在这个url里面写支付跳转前的提交信息。
                     'success_redirect_url'     => '@homeUrl/payment/success',            // 在支付平台支付成功后，返回的页面
                 ],
+/**
                 
                 'paypal_standard' => [
                     // 订单生成后，跳转到支付开始页面的url
@@ -61,9 +62,10 @@ return [
                     'ipn_url'               => '@homeUrl/payment/alipay/standard/ipn',
                     'success_redirect_url'  => '@homeUrl/payment/success',
                 ],
-                
+*/                
             ],
-            'express' => [    // 在购物车页面直接跳转到支付平台，譬如paypal快捷支付方式。
+ 
+           'express' => [    // 在购物车页面直接跳转到支付平台，譬如paypal快捷支付方式。
                 'paypal_express' => [
                     // 下面是沙盒地址，线上地址为：https://api-3t.paypal.com/nvp，
                     // 这个url的作用用于 Yii::$service->payment->paypal->PPHttpPost5 ，发起一些api请求
@@ -87,6 +89,7 @@ return [
                     'ipn_url' => '@homeUrl/payment/paypal/express/ipn',
                 ],
             ],
+
         ],
         'childService' => [
             'paypal' => [
