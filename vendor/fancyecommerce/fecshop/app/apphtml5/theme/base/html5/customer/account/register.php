@@ -26,7 +26,7 @@
 					</div>
 					<div class="item-inner">
 						<div class="item-input">
-						<input class="required-entry" type="text" placeholder="First name"  id="firstname" name="editForm[firstname]" value="<?= $firstname ?>" title="First Name">
+						<input class="required-entry" type="text" placeholder="<?= Yii::$service->page->translate->__('First name'); ?>"  id="firstname" name="editForm[firstname]" value="<?= $firstname ?>" title="First Name">
 						</div>
 					</div>
 				</div>
@@ -38,7 +38,7 @@
 					</div>
 					<div class="item-inner">
 						<div class="item-input">
-						<input class="required-entry" type="text" placeholder="Last name" id="lastname" name="editForm[lastname]" value="<?= $lastname ?>" title="Last Name">
+						<input class="required-entry" type="text" placeholder="<?= Yii::$service->page->translate->__('Last name'); ?>" id="lastname" name="editForm[lastname]" value="<?= $lastname ?>" title="Last Name">
 						</div>
 					</div>
 				</div>
@@ -49,7 +49,7 @@
 					<div class="item-media"><i class="icon icon-form-email"></i></div>
 					<div class="item-inner">
 						<div class="item-input">
-							<input class="required-entry  validate-email"  type="email" placeholder="E-mail"  name="editForm[email]" id="email_address" value="<?= $email ?>" title="Email Address">
+							<input class="required-entry  validate-email"  type="email" placeholder="<?= Yii::$service->page->translate->__('E-mail'); ?>"  name="editForm[email]" id="email_address" value="<?= $email ?>" title="Email Address">
 						</div>
 					</div>
 				</div>
@@ -59,7 +59,7 @@
 					<div class="item-media"><i class="icon icon-form-password"></i></div>
 					<div class="item-inner">
 						<div class="item-input">
-							<input  type="password" placeholder="Password"  name="editForm[password]" class="input-text required-entry validate-password" id="password" title="Password" >
+							<input  type="password" placeholder="<?= Yii::$service->page->translate->__('Password'); ?>"  name="editForm[password]" class="input-text required-entry validate-password" id="password" title="Password" >
 						</div>
 					</div>
 				</div>
@@ -69,7 +69,7 @@
 					<div class="item-media"><i class="icon icon-form-password"></i></div>
 					<div class="item-inner">
 						<div class="item-input">
-							<input type="password" placeholder="Confirm password"  name="editForm[confirmation]" title="Confirm Password" id="confirmation" >
+							<input type="password" placeholder="<?= Yii::$service->page->translate->__('Confirm password'); ?>"  name="editForm[confirmation]" title="Confirm Password" id="confirmation" >
 						</div>
 					</div>
 				</div>
@@ -81,7 +81,7 @@
 						<div class="item-media"><i class="icon icon-form-password"></i></div>
 						<div class="item-inner">
 							<div class="item-input">
-								<input placeholder="captcha" type="text" name="editForm[captcha]" value="" size=10 class="login-captcha-input">
+								<input placeholder="<?= Yii::$service->page->translate->__('Captcha'); ?>" type="text" name="editForm[captcha]" value="" size=10 class="login-captcha-input">
                                 <img class="login-captcha-img"  title="<?= Yii::$service->page->translate->__('click refresh'); ?>" src="<?= Yii::$service->url->getUrl('site/helper/captcha'); ?>?<?php echo md5(time() . mt_rand(1,10000));?>" align="absbottom" onclick="this.src='<?= Yii::$service->url->getUrl('site/helper/captcha'); ?>?'+Math.random();"></img>
 								<span class="icon icon-refresh"></span>
 							</div>
