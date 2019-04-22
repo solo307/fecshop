@@ -141,12 +141,7 @@ use fec\helpers\CRequest;
 									<button onclick="location.href='<?= Yii::$service->url->getUrl('checkout/onepage');  ?>'" type="button" title="Proceed to Checkout" class="button btn-proceed-checkout btn-checkout"><span><span><?= Yii::$service->page->translate->__('Proceed to Pay');?></span></span></button>
 							
 								</div>
-								<div class="col-50">
-									<a  external class="express_paypal" href="<?= Yii::$service->url->getUrl('payment/paypal/express/start');    ?>">
-										<img src="<?= Yii::$service->image->getImgUrl('/images/pay.png') ?>"  />
-									</a>
 									
-								</div>
 							</div>
 						</div>
 					</div>
