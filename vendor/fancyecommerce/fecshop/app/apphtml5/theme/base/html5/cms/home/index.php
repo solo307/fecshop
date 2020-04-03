@@ -9,8 +9,6 @@
 ?>
 <div class="swiper-container" data-space-between='10'>
 	<div class="swiper-wrapper">
-		<div class="swiper-slide"><a href=http://m.yensuciu.com/vi/26115929><img  class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_img_1.jpg','apphtml5'); ?>" alt="" ></a></div>
-		<div class="swiper-slide"><a href=http://m.yensuciu.com/vi/27563949><img  class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_img_2.jpg','apphtml5'); ?>" alt="" ></a></div>
 		<div class="swiper-slide"><a href=http://m.yensuciu.com/vi/lm-mng-tay><img  class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_img_3.jpg','apphtml5'); ?>" alt="" ></a></div>
 	</div>
 	<div class="swiper-pagination"></div>
@@ -19,10 +17,59 @@
 <div style="padding:10px;">
 	<div class="row">
 		<div class="col-50">
-			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_small_1.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_split_1.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-50">
+                       <a href="https://m.yensuciu.com/vi/73152397"></a><img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_small_1.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
 		</div>
 		<div class="col-50">
 			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_small_2.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-50">
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_split_2.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-50">
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_small_3.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+		<div class="col-50">
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_small_4.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+	<div class="row">
+		<div class="col-50">
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_split_2.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-50">
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_small_7.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+		<div class="col-50">
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_small_8.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-50">
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_split_2.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-50">
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_small_5.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+		<div class="col-50">
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_small_6.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-50">
+			<img class="lazy" data-src="<?= Yii::$service->image->getImgUrl('custom/home_split_3.jpg','apphtml5'); ?>" alt="" style='width: 100%'>
 		</div>
 	</div>
 </div>

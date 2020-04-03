@@ -99,19 +99,19 @@ class Index
         // 增加重量，长宽高，体积重等信息
         if ($this->_product['weight']) {
             $weightName = Yii::$service->page->translate->__('weight');
-            $gArr[$weightName] = $this->_product['weight'].' Kg';
+            $gArr[$weightName] = $this->_product['weight'].' g';
         }
         if ($this->_product['long']) {
             $longName = Yii::$service->page->translate->__('long');
-            $gArr[$longName] = $this->_product['long'].' Cm';
+            $gArr[$longName] = $this->_product['long'].' mm';
         }
         if ($this->_product['width']) {
             $widthName = Yii::$service->page->translate->__('width');
-            $gArr[$widthName] = $this->_product['width'].' Cm';
+            $gArr[$widthName] = $this->_product['width'].' mm';
         }
         if ($this->_product['high']) {
             $highName = Yii::$service->page->translate->__('high');
-            $gArr[$highName] = $this->_product['high'].' Cm';
+            $gArr[$highName] = $this->_product['high'].' mm';
         }
         if ($this->_product['volume_weight']) {
             $volumeWeightName = Yii::$service->page->translate->__('volume weight');

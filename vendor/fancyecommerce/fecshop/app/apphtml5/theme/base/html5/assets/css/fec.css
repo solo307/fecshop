@@ -194,7 +194,7 @@ a{font-size:0.8em;}
 .pg .label {
    float: left;
     font-size: 0.5rem;
-    width: 2.4rem;
+    width: 3rem;
 }
 
 
@@ -268,12 +268,13 @@ a{font-size:0.8em;}
 }
 
 .product_options a.noimgshow {
-     font-size: 11px;
-    height: 44px;
-    line-height: 44px;
+    font-size: 11px;
+    height: 40px;
+    line-height: 40px;
     min-width: 15px;
-    padding: 0px;
-	text-align:center;
+    padding: 3px;
+    text-align:center;
+    width:auto;
 }
 
 

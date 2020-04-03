@@ -21,7 +21,7 @@ class Format
      * @return float， 返回格式化后的数据
      * 一般用于模板中，按照显示格式显示产品数据。
      */
-    public static function price($price, $bits = 2)
+    public static function price($price, $bits = 0)
     {
         return number_format($price, $bits);
     }

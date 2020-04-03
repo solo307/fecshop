@@ -14,7 +14,7 @@ return [
         // 属性组的配置
         'customAttrGroup' => [
             //属性组的名字（每一个子项是一个属性组，譬如下面的clothes_group对应的就是一个属性组）
-            'clothes_group' => [
+            'color_group' => [
                 /*
                  * 属性组里面的属性有类别，目前有三个类
                  * 1. spu_attr 
@@ -32,59 +32,40 @@ return [
                  */
                 'spu_attr' => [  // spu用来区分sku的属性，譬如下面的属性的不同，对应不同的sku，进而是不同的库存
                     // 第一个属性会被用户当做图片来显示。
-                    'color'      => [
+                    'my_color'      => [
                         'dbtype'     => 'String',
-                        'name'       => 'color',
-                        'showAsImg'  => true,
+                        'name'       => 'my_color',
+                        'showAsImg'  => false,
                         'sort_order'   => 1,
                         'display' => [
                             'type' => 'select',
                             'data' => [
                                 # 产品的spu属性的顺序，会按照下面的顺序进行排序。
-                                'one-color',
                                 'red',
+                                'purple red',
+                                'orange red',
+                                'pink',
+                                'oxblood red',
+                                'blue',
+                                'wathet',
+                                'navy blue',
+                                'green',
+                                'turquoise',
+                                'light green',
+                                'yellow',
+                                'beige',
+                                'khaki',
+                                'violet',
+                                'dark purple',
+                                'lavender',
+                                'purple black',
+                                'orange',
+                                'orange yellow',
                                 'white',
                                 'black',
-                                'blue',
-                                'green',
-                                'yellow',
                                 'gray',
-                                'khaki',
-                                'ivory',
-                                'beige',
-                                'orange',
-                                'cyan',
-                                'leopard',
-                                'camouflage',
-                                'silver',
-                                'pink',
-                                'purple',
-                                'brown',
                                 'golden',
-                                'multicolor',
-                                'white-blue',
-                                'white-black',
-                            ],
-                        ],
-                        //'require' => 0,
-                        //'default' => 2,
-                    ],
-                    // 第二个属性不会当做图片来显示
-                    'size' => [
-                        'dbtype' => 'String',
-                        'name'   => 'size',
-                        'sort_order' => 2,
-                        'display'     => [
-                            'type'    => 'select',
-                            'data'    => [
-                                # 产品的spu属性的顺序，会按照下面的顺序进行排序。
-                                'one-size',
-                                'S',
-                                'M',
-                                'L',
-                                'XL',
-                                'XXL',
-                                'XXXL',
+                                'silvery',
                             ],
                         ],
                         //'require' => 0,
@@ -119,144 +100,43 @@ return [
                         ],
                     ],
                     // 这是<select> 的类型
-                    'style'   => [
-                        'dbtype'     => 'String',
-                        'name'       => 'style',
-                        'display'     => [
-                            'type'    => 'select',        // 下拉条选择格式的属性
-                            'data'    => [
-                                'casual',
-                                'cute',
-                                'sexy-club',
-                                'Bohemian',
-                                'Vintage',
-                                'Brief',
-                                'Work',
-                                'Novelty',
-                            ],
-                        ],
-                    ],
-
-                    'dresses-length'    => [
-                        'dbtype'     => 'String',
-                        'name'       => 'dresses-length',
-                        'display'     => [
-                            'type'    => 'select',    // 下拉条选择格式的属性
-                            'data'    => [
-                                'mini',
-                                'knee-length',
-                                'mid-calf',
-                                'ankle-length',
-                                'floor-length',
-                            ],
-                        ],
-                    ],
-
-                    'pattern-type'    => [
-                        'dbtype'     => 'String',
-                        'name'       => 'pattern-type',    // 属性名字
-                        'display'    => [
-                            'type'    => 'select',    // 下拉条选择格式的属性
-                            'data'    => [
-                                'animal',
-                                'character',
-                                'floral',
-                                'geometric',
-                                'leopard',
-                                'letter',
-                                'paisley',
-                                'patchwork',
-                                'polka-dot',
-                                'print',
-                                'striped',
-                            ],
-                        ],
-                    ],
-
-                    'sleeve-length'    => [
-                        'dbtype' => 'String',
-                        'name'   => 'sleeve-length',
-                        'display' => [
-                            'type' => 'select',
-                            'data' => [
-                                'sleeveless',
-                                'short-Sleeves',
-                                'half-sleeves',
-                                '3-4-length-sleeves',
-                                'long-sleeves',
-                            ],
-                        ],
-                    ],
-
-                    'collar' => [
-                        'dbtype'     => 'String',
-                        'name'       => 'collar',
-                        'display'    => [
-                            'type'    => 'select',
-                            'data'    => [
-                                'round-neck',    // 下拉条里面对应的各个可以选择的值。
-                                'v-meck',
-                                'hooded',
-                                'turn-down-collar',
-                            ],
-                        ],
-                        //'require' => 0,
-                        //'default' => 2,
-                    ],
                 ],
 
                 'custom_options' => [
                     'my_color'      => [
                         'dbtype'    => 'String',  //类型
-                        'name'      => 'color',      // 在数据库中存在的列名
-                        'showAsImg' => true,  // （在前端展示部分）通过图片的方式展示属性。譬如；http://fecshop.appfront.fancyecommerce.com/index.php/reindeer-pattern-glitter-christmas-dress-86519596，
+                        'name'      => 'my_color',      // 在数据库中存在的列名
+                        'showAsImg' => false,  // （在前端展示部分）通过图片的方式展示属性。譬如；http://fecshop.appfront.fancyecommerce.com/index.php/reindeer-pattern-glitter-christmas-dress-86519596，
                                               //		你会发现，该属性对应的显示方式不是值，而是产品的图片。
                         'require' => 1,  // 1代表是必填选项，0代表选填
                         'display' => [
                             'type' => 'select',
                             'data' => [
                                 'red',
+                                'purple red',
+                                'orange red',
+                                'pink',
+                                'oxblood red',
+                                'blue',
+                                'wathet',
+                                'navy blue',
+                                'green',
+                                'turquoise',
+                                'light green',
+                                'yellow',
+                                'beige',
+                                'khaki',
+                                'violet',
+                                'dark purple',
+                                'lavender',
+                                'purple black',
+                                'orange',
+                                'orange yellow',
                                 'white',
                                 'black',
-                                'blue',
-                                'green',
-                                'yellow',
                                 'gray',
-                                'khaki',
-                                'ivory',
-                                'beige',
-                                'orange',
-                                'cyan',
-                                'leopard',
-                                'camouflage',
-                                'silver',
-                                'pink',
-                                'purple',
-                                'brown',
                                 'golden',
-                                'leopard',
-                                'multicolor',
-                                'white-blue',
-                                'white-black',
-                            ],
-                        ],
-
-                    ],
-
-                    'my_size'      => [
-                        'dbtype'     => 'String',
-                        'name'       => 'size',
-                        'require'    => 1,
-                        'display'    => [
-                            'type'    => 'select',
-                            'data'    => [
-                                's',
-                                'm' ,
-                                '0.6',
-                                'l',
-                                'xl',
-                                'xxl',
-                                'xxxl',
+                                'silvery',
                             ],
                         ],
 
@@ -268,25 +148,21 @@ return [
             'type_group' => [
                 'spu_attr' => [  // spu用来区分sku的属性，譬如下面的属性的不同，对应不同的sku，进而是不同的库存
                     // 第一个属性会被用户当做图片来显示。
-                    'type'      => [
+                    'my_type'      => [
                         'dbtype'     => 'String',
-                        'name'       => 'type',
-                        'showAsImg'  => true,
+                        'name'       => 'my_type',
+                        'showAsImg'  => false,
                         'sort_order' => 1,
                         'display'    => [
                             'type' => 'select',
                             'data' => [
-                                'type-A',
-                                'type-B',
-                                'type-C',
-                                'type-D',
-                                'type-E',
-                                'type-F',
-                                'type-G',
-                                'type-H',
-                                'type-I',
-                                'type-J',
-                                'type-K',
+                                'A',
+                                'B',
+                                'C',
+                                'D',
+                                'E',
+                                'F',
+                                'G',
                             ],
                         ],
                     ],
@@ -321,28 +197,23 @@ return [
                 ],
 
                 'custom_options' => [
-
                     'my_type'     => [
                         'dbtype'    => 'String',  //类型
-                        'name'      => 'type',      // 在数据库中存在的列名
-                        'showAsImg' => true,  // （在前端展示部分）通过图片的方式展示属性。譬如；http://fecshop.appfront.fancyecommerce.com/index.php/reindeer-pattern-glitter-christmas-dress-86519596，
+                        'name'      => 'my_type',      // 在数据库中存在的列名
+                        'showAsImg' => false,  // （在前端展示部分）通过图片的方式展示属性。譬如；http://fecshop.appfront.fancyecommerce.com/index.php/reindeer-pattern-glitter-christmas-dress-86519596，
                                               //		你会发现，该属性对应的显示方式不是值，而是产品的图片。
                         'require'   => 1,  // 1代表是必填选项，0代表选填
                         'display'   => [
                             'type'   => 'select',
                             'data' => [
                                 # 产品的spu属性的顺序，会按照下面的顺序进行排序。
-                                'type-A',
-                                'type-B',
-                                'type-C',
-                                'type-D',
-                                'type-E',
-                                'type-F',
-                                'type-G',
-                                'type-H',
-                                'type-I',
-                                'type-J',
-                                'type-K',
+                                'A',
+                                'B',
+                                'C',
+                                'D',
+                                'E',
+                                'F',
+                                'G',
                             ],
                         ],
                     ],
@@ -350,125 +221,26 @@ return [
                 ],
             ],
             
-            'computer_group' => [
+            'number_group' => [
                 'spu_attr' => [  // spu用来区分sku的属性，譬如下面的属性的不同，对应不同的sku，进而是不同的库存
-                    'xinghao'      => [
-                        'dbtype'   => 'String',
-                        'name'      => 'xinghao',
-                        'showAsImg' => true,
-                        'sort_order'  => 1,
-                        'relateImage' => true,  // 该属性用图片展示。
-                        'display'     => [
-                            'type' => 'select',
-                            'data' => [
-                                'xinghao1',
-                                'xinghao2',
-                                'xinghao3',
-                            ],
-                        ],
-                        //'require' => 0,
-                        //'default' => 2,
-                    ],
-
-                    'cpu'      => [
+                    // 第一个属性会被用户当做图片来显示。
+                    'my_number'      => [
                         'dbtype'     => 'String',
-                        'name'       => 'cpu',
-                        'sort_order' => 2,
+                        'name'       => 'my_number',
+                        'showAsImg'  => false,
+                        'sort_order' => 1,
                         'display'    => [
-                            'type'    => 'select',
-                            'data'    => [
-                                'cpu1',
-                                'cpu2',
-                                'cpu3',
-                            ],
-                        ],
-                        //'require' => 0,
-                        //'default' => 2,
-                    ],
-                ],
-                'general_attr' => [   //增加的普通属性，只是字段标示，不会用于属性过滤等用途
-                    'memory_capacity'    => [
-                        'dbtype'    => 'String',
-                        'name'      => 'memory_capacity',
-                        'display'   => [
-                            'type' => 'inputString',
-                            'lang' => true,
-                        ],
-                        'require' => 0,
-                    ],
-                ],
-                'custom_option_attr' => [
-                    'color'      => [
-                        'dbtype'   => 'String',
-                        'name'     => 'color',
-                        'display'  => [
                             'type' => 'select',
                             'data' => [
-                                # 产品的spu属性的顺序，会按照下面的顺序进行排序。
-                                'one-color',
-                                'red',
-                                'white',
-                                'black',
-                                'blue',
-                                'green',
-                                'yellow',
-                                'gray',
-                                'khaki',
-                                'ivory',
-                                'beige',
-                                'orange',
-                                'cyan',
-                                'leopard',
-                                'camouflage',
-                                'silver',
-                                'pink',
-                                'purple',
-                                'brown',
-                                'golden',
-                                'multicolor',
-                                'white-blue',
-                                'white-black',
-                            ],
-                        ],
-                        //'require' => 0,
-                        //'default' => 2,
-                    ],
-                ],
-            ],
-
-            'color_group' => [
-                'custom_options' => [
-                    'my_color'      => [
-                        'dbtype'    => 'String',
-                        'name'      => 'color',
-                        'showAsImg' => true, // 通过图片的方式展示属性。
-                        'require'   => 1,  // 1代表是必填选项，0代表选填
-                        'display'   => [
-                            'type' => 'select',
-                            'data' => [
-                                # 产品的spu属性的顺序，会按照下面的顺序进行排序。
-                                'red',
-                                'white',
-                                'black',
-                                'blue',
-                                'green',
-                                'yellow',
-                                'gray',
-                                'khaki',
-                                'ivory',
-                                'beige',
-                                'orange',
-                                'cyan',
-                                'leopard',
-                                'camouflage',
-                                'silver',
-                                'pink',
-                                'purple',
-                                'brown',
-                                'golden',
-                                'multicolor',
-                                'white-blue',
-                                'white-black',
+                                '1',
+                                '2',
+                                '3',
+                                '4',
+                                '5',
+                                '6',
+                                '7',
+                                '8',
+                                '9',
                             ],
                         ],
                     ],
@@ -479,7 +251,7 @@ return [
                     'my_remark' => [
                         'dbtype' => 'String',
                         'name'   => 'my_remark',
-                        'display' => [
+                        'display'=> [
                             'type' => 'inputString',   // 字符串格式的属性
                         ],
                         'require' => 0,
@@ -488,9 +260,9 @@ return [
                     'my_email' => [
                         'dbtype'  => 'String',
                         'name'    => 'my_email',
-                        'require'  => 0,
-                        'display'  => [
-                            'type'  => 'inputEmail',        // 字符串格式的属性（email格式验证）
+                        'require' => 0,
+                        'display' => [
+                            'type' => 'inputEmail',        // 字符串格式的属性（email格式验证）
                         ],
                     ],
                     // 这是input type='date' 的类型
@@ -500,10 +272,34 @@ return [
                             'type' => 'inputDate',        // 字符串格式的属性（Date格式验证）
                         ],
                     ],
-                    // 这是<select> 的类型
+                ],
+
+                'custom_options' => [
+                    'my_number'     => [
+                        'dbtype'    => 'String',  //类型
+                        'name'      => 'my_number',      // 在数据库中存在的列名
+                        'showAsImg' => false,  // （在前端展示部分）通过图片的方式展示属性。譬如；http://fecshop.appfront.fancyecommerce.com/index.php/reindeer-pattern-glitter-christmas-dress-86519596，
+                                              //		你会发现，该属性对应的显示方式不是值，而是产品的图片。
+                        'require'   => 1,  // 1代表是必填选项，0代表选填
+                        'display'   => [
+                            'type'   => 'select',
+                            'data' => [
+                                # 产品的spu属性的顺序，会按照下面的顺序进行排序。
+                                '1',
+                                '2',
+                                '3',
+                                '4',
+                                '5',
+                                '6',
+                                '7',
+                                '8',
+                                '9',
+                            ],
+                        ],
+                    ],
 
                 ],
             ],
-        ],
+      ],//分类外层括号
     ],
 ];
